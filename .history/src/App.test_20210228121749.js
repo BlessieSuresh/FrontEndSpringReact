@@ -8,6 +8,6 @@ test('renders the link of the nav bar', () => {
   // const element = screen.getByText("Github for back");
   //expect(element).toBeInTheDocument();
 
-
+  render(<AppNavbar />);
 
 });
