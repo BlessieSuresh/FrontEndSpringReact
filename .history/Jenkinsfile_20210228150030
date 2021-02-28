@@ -29,7 +29,7 @@ node {
         if (isUnix()) {
             sh "npm run test"
         } else {
-            bat(/npm test -- --watchAll=false /)
+            bat(/jest/)
         }
     }
 
