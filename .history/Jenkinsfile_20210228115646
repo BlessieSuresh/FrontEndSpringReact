@@ -10,7 +10,7 @@ node {
         if (isUnix()) {
             sh "npm install"
         } else {
-            bat(/npm install/)
+            bat(/"npm" install/)
         }
     }
 
