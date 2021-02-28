@@ -6,8 +6,9 @@ pipeline {
                 if (isUnix()) {
                     sh "npm install"
                 } else {
-                    bat(/"npm install"/)
+                    bat(/"${MAVEN_HOME}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
                 }
+                sh 'npm install' 
             }
         }
     }
